@@ -22,11 +22,11 @@ A quantitative launch-control framework for testing whether an automotive indust
 | P(on-time) | **70.9% → 95.4%** |
 | Modeled Target+ mitigation cost | **€1.58M** |
 
-![Launch credibility: deterministic CPM vs stochastic baseline vs Target+](figures/portfolio_hero.png)
+![Launch credibility: deterministic CPM vs stochastic baseline vs Target+](figures/portfolio_hero.svg)
 
 **Decision:** which targeted mitigations most efficiently restore launch confidence without pretending that the deterministic CPM date is a probabilistic forecast?
 
-[Technical thesis](docs/technical_thesis.pdf) · [Interview talking points](INTERVIEW_TALKING_POINTS.md) · [CV bullets](docs/cv_bullets.md) · [Final QA](FINAL_QA_REPORT.md) · [GitHub metadata](docs/github_metadata.md)
+[Technical thesis](docs/technical_thesis.md) · [Interview talking points](INTERVIEW_TALKING_POINTS.md) · [CV bullets](docs/cv_bullets.md) · [Final QA](FINAL_QA_REPORT.md) · [GitHub metadata](docs/github_metadata.md)
 
 ## Problem
 
@@ -71,14 +71,16 @@ Repository structure:
 
 ```text
 src/            quantitative core
-data/           synthetic full/sample datasets
+data/           synthetic/sample datasets
+data/raw/       minimum dependency graph required by DAG smoke tests
 configs/        scenario configuration
 outputs/        single-source validated decision tables
-figures/        recruiter- and decision-facing figures
+figures/        GitHub-native decision figures
+notebooks/      thin exploration layers; production logic remains in src/
 tests/          unit/integration/invariant/regression tests
 docs/           thesis, methodology, validation and governance
 dashboard/      lightweight Streamlit control tower
-experiments/    provenance and release manifests
+experiments/    provenance and release metadata
 ```
 
 ## Methods and technical credibility
@@ -111,7 +113,7 @@ The project preserves a useful negative result: generic resource uplift by itsel
 | + Early FAT/change control | €1.56M | 731 | 35 | 89.6% |
 | **Target+ + selective crashing** | **€1.58M** | **713** | **53** | **95.4%** |
 
-![Mitigation frontier](figures/mitigation_frontier.png)
+![Mitigation frontier](figures/mitigation_frontier.svg)
 
 ## Stress failure: automation debug
 
@@ -131,7 +133,7 @@ Modeled tail-risk decomposition:
 
 The highest-value focused intervention is **pre-commission software emulation/freeze**: modeled at **€240k**, approximately **22 P80 days recovered** and **+10.8 pp** on-time confidence in the focused scenario.
 
-![Automation-debug tail risk](figures/automation_debug_risk.png)
+![Automation-debug tail risk](figures/automation_debug_risk.svg)
 
 ## Final stress screen
 
@@ -180,8 +182,7 @@ Expected smoke-test result for this release: **35 passed, 0 failed**.
 
 | Resource | Purpose |
 |---|---|
-| [`docs/technical_thesis.pdf`](docs/technical_thesis.pdf) | Final technical thesis |
-| [`docs/technical_thesis.md`](docs/technical_thesis.md) | Source thesis |
+| [`docs/technical_thesis.md`](docs/technical_thesis.md) | Final GitHub-readable technical thesis source |
 | [`INTERVIEW_TALKING_POINTS.md`](INTERVIEW_TALKING_POINTS.md) | Concise recruiter/interview narrative |
 | [`docs/cv_bullets.md`](docs/cv_bullets.md) | Two quantified, synthetic-safe CV bullets |
 | [`docs/github_metadata.md`](docs/github_metadata.md) | Repository description, topics and pinning guidance |
@@ -194,7 +195,9 @@ Expected smoke-test result for this release: **35 passed, 0 failed**.
 | [`docs/economic_model.md`](docs/economic_model.md) | Cost and mitigation economics |
 | [`docs/validation_report.md`](docs/validation_report.md) | Verification/validation boundary |
 | [`docs/industrial_data_requirements.md`](docs/industrial_data_requirements.md) | Data required for real industrial calibration |
-| [`FINAL_QA_REPORT.md`](FINAL_QA_REPORT.md) | Release smoke test and package QA |
+| [`FINAL_QA_REPORT.md`](FINAL_QA_REPORT.md) | Verified publication-freeze QA basis |
+
+> **GitHub publication note:** the frozen master archive retains the validated PDF and PNG artifacts byte-for-byte. This GitHub upload uses equivalent SVG figures plus the Markdown thesis source because the connected GitHub publishing interface supports reliable UTF-8 repository writes but not direct binary-file transfer from the workspace. No core result was recomputed or changed.
 
 ## Limitations
 
