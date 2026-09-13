@@ -1,0 +1,49 @@
+{
+  "release": "final-2026-09-13-model",
+  "seed": 20260913,
+  "synthetic": true,
+  "core_results": {
+    "scale": {
+      "activities": 720,
+      "dependencies": 1102,
+      "suppliers": 42,
+      "equipment_assets": 144,
+      "risks": 320
+    },
+    "commitment_day": 751,
+    "deterministic_sop": 636,
+    "program_completion": 658,
+    "baseline": {
+      "p50": 723,
+      "p80": 766,
+      "p90": 786,
+      "on_time_probability": 0.709
+    },
+    "target_plus": {
+      "p50": 678,
+      "p80": 713,
+      "p90": 734,
+      "on_time_probability": 0.954
+    },
+    "target_plus_fresh_seed": {
+      "p50": 679,
+      "p80": 714,
+      "p90": 735,
+      "on_time_probability": 0.951,
+      "on_time_mc_se": 0.0062
+    },
+    "mitigation_cost_eur": 1579799,
+    "selective_crashing_cost_eur": 19799,
+    "readiness": {
+      "index": 0.755,
+      "status": "RED",
+      "failed_gates": [
+        "critical commissioning issues",
+        "critical supplier approval",
+        "critical equipment release"
+      ]
+    },
+    "tests_expected": 35
+  },
+  "files": []
+}

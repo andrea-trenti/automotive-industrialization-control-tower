@@ -1,0 +1,4 @@
+case,delay_cost_per_day_eur,contribution_margin_share,capacity_value_share,expediting_containment_share,literature_or_external_share,engineering_assumption_share,purely_synthetic_share
+Conservative,18000,0.6,0.25,0.15,0.42,0.38,0.2
+Base,35000,0.55,0.25,0.2,0.42,0.38,0.2
+Stress,65000,0.5,0.22,0.28,0.42,0.38,0.2

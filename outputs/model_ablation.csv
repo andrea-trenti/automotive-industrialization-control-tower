@@ -1,0 +1,7 @@
+model,p50,p80,p90,on_time_probability
+Deterministic CPM,636,636,636,1.0
+CPM + independent uncertainty,645,653,657,1.0
++ correlated latent risks,645,681,701,0.99
++ explicit engineering/supplier/FAT/SAT risk,667,709,733,0.948
++ resource constraints + calendars,723,766,786,0.709
+Target+ OOS + calendars,678,713,734,0.954

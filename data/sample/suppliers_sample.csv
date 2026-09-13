@@ -1,0 +1,16 @@
+supplier_id,family,single_source_components,criticality,readiness_evidence,delay_probability
+S001,wiring,5,0.61,0.76,0.345
+S002,electronics,1,0.072,0.656,0.188
+S003,castings,2,0.526,0.569,0.344
+S004,interior,3,0.334,0.516,0.274
+S005,powertrain,4,0.694,0.91,0.322
+S006,chassis,2,0.429,0.776,0.244
+S007,wiring,0,0.536,0.55,0.3
+S008,electronics,3,0.594,0.386,0.357
+S009,castings,0,0.712,0.817,0.357
+S010,interior,1,0.542,0.702,0.341
+S011,powertrain,4,0.574,0.613,0.335
+S012,chassis,3,0.367,0.543,0.306
+S013,wiring,3,0.694,0.592,0.392
+S014,electronics,0,0.622,0.661,0.351
+S015,castings,1,0.563,0.73,0.328

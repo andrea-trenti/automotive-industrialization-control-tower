@@ -1,0 +1,6 @@
+plan,incremental_cost_eur,on_time_probability,p80_sop,p80_days_saved,delta_on_time_probability,probability_points_per_100k,cost_per_p80_day_saved
+Baseline,0,0.709,766,0,0.0,,
+Resource calendar-aware uplift,640000,0.712,765,1,0.003,0.04687499999999999,640000.0
++ Supplier mitigation,1040000,0.745,758,8,0.036,0.3461538461538461,130000.0
++ Early FAT/change control,1560000,0.896,731,35,0.187,1.1987179487179487,44571.42857142857
+Target+ + selective crashing,1579799,0.954,713,53,0.245,1.5508302005508294,29807.528301886792

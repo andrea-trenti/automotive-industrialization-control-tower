@@ -1,0 +1,6 @@
+component,tail_risk_share,mitigation_cost_eur,p80_days_recovered,delta_on_time_probability,cost_per_p80_day_recovered
+Software debugging,0.36,240000,22,0.108,10909.09090909091
+PLC/I-O integration,0.27,120000,11,0.056,10909.09090909091
+Robot integration,0.18,150000,8,0.043,18750.0
+Vision integration,0.12,90000,5,0.027,18000.0
+Mechanical correction,0.07,75000,3,0.013,25000.0

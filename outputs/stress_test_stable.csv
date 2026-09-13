@@ -1,0 +1,8 @@
+stress,p80_sop,on_time_probability,p80_mc_se_days
+Supplier delay +2 weeks,726,0.938,1.4
+Supplier delay +4 weeks,739,0.864,1.6
+Supplier delay +6 weeks,752,0.797,1.8
+Critical FAT failure,761,0.746,1.9
+Commissioning resources -20%,744,0.842,1.7
+Automation debug +35%,823,0.315,2.1
+Combined stress,856,0.176,2.0

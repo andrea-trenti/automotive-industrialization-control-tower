@@ -1,0 +1,3 @@
+scenario,expected_total_cost_meur,p80_cost_meur,p95_cost_meur,cvar95_meur,expected_delay_cost_meur
+Baseline,89.18,95.8,106.0,112.4,1.55
+Target+,89.24,95.2,102.0,106.2,0.14

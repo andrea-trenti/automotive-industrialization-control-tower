@@ -1,0 +1,9 @@
+{
+  "tasks": 14,
+  "resource_capacity": 2,
+  "exact_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "exact_makespan": 42,
+  "heuristic_precedence_only_makespan": 37,
+  "solver": "scipy.optimize.milp / HiGHS",
+  "mip_gap": 0.0
+}
